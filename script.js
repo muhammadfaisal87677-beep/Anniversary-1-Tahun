@@ -1,7 +1,13 @@
 const tombol = document.getElementById("btnKenangan");
 
 tombol.addEventListener("click", function () {
-    document.getElementById("kenangan").style.display = "block";
+
+    const kenangan = document.getElementById("kenangan");
+
+    kenangan.style.display = "block";
+
+    kenangan.classList.add("fade-show");
+
 });
 
 const tanggalJadian = new Date("2025-06-01T00:00:00");
@@ -47,7 +53,7 @@ function updateCounter() {
 
             <div class="time-box">
                 <div class="angka">
-                    ${jam.toString().padStart(2, '0')}
+                    ${jam.toString().padStart(2,'0')}
                 </div>
                 <div class="label">
                     Jam
@@ -56,7 +62,7 @@ function updateCounter() {
 
             <div class="time-box">
                 <div class="angka">
-                    ${menit.toString().padStart(2, '0')}
+                    ${menit.toString().padStart(2,'0')}
                 </div>
                 <div class="label">
                     Menit
@@ -65,7 +71,7 @@ function updateCounter() {
 
             <div class="time-box">
                 <div class="angka">
-                    ${detik.toString().padStart(2, '0')}
+                    ${detik.toString().padStart(2,'0')}
                 </div>
                 <div class="label">
                     Detik
@@ -80,6 +86,9 @@ function updateCounter() {
 updateCounter();
 
 setInterval(updateCounter, 1000);
+
+/* HUJAN HATI */
+
 function createHeart() {
 
     const heart = document.createElement("div");
@@ -88,16 +97,20 @@ function createHeart() {
 
     heart.innerHTML = "❤️";
 
-    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (Math.random() * 20 + 15) + "px";
 
     heart.style.animationDuration =
-        (Math.random() * 4 + 3) + "s";
+        (Math.random() * 6 + 6) + "s";
 
     document.body.appendChild(heart);
 
     setTimeout(() => {
         heart.remove();
-    }, 7000);
+    }, 12000);
 }
 
-setInterval(createHeart, 1500);
+setInterval(createHeart, 1200);
