@@ -174,4 +174,72 @@ button:hover {
 
 .music-player h3 {
     color: #ff4d88;
+}/* COUNTER ANNIVERSARY */
+
+.hari-box{
+    width:180px;
+
+    margin:20px auto 10px;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    color:#ff4d88;
+}
+
+.hari-label{
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#666;
+
+    margin-bottom:25px;
+}
+
+.time-container{
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:100px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.angka{
+    font-size:36px;
+
+    font-weight:bold;
+
+    color:#ff4d88;
+}
+
+.label{
+    margin-top:8px;
+
+    font-size:14px;
+
+    color:#666;
 }
