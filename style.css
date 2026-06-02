@@ -268,3 +268,73 @@ button:hover {
     }
 
 }
+/* FOTO UTAMA */
+
+.container > img{
+    transition: all 0.4s ease;
+}
+
+.container > img:hover{
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px rgba(255,77,136,0.5),
+        0 0 40px rgba(255,77,136,0.3);
+}
+
+/* EFEK MUNCUL */
+
+.fade-show{
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* HATI PREMIUM */
+
+.heart{
+
+    position:fixed;
+
+    top:-50px;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    animation-name:heartFall;
+
+    animation-timing-function:linear;
+
+    animation-fill-mode:forwards;
+}
+
+@keyframes heartFall{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(120vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
