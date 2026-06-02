@@ -243,3 +243,28 @@ button:hover {
 
     color:#666;
 }
+.heart {
+    position: fixed;
+
+    top: -20px;
+
+    font-size: 20px;
+
+    animation: fall linear forwards;
+
+    pointer-events: none;
+
+    z-index: 9999;
+}
+
+@keyframes fall {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(110vh);
+    }
+
+}
